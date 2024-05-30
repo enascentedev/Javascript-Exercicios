@@ -15,10 +15,10 @@ const produtos = [
 const inicial = {};
 const resultado = produtos.reduce(
   (accumulator, currentValue) => {
-		if(accumulator[currentValue.categoria]){
-			accumulator[currentValue.categoria]+=1
+		if(accumulator[currentValue.nome]){
+			accumulator[currentValue.nome]+=1
 		}else{
-			accumulator[currentValue.categoria]=1
+			accumulator[currentValue.nome]=1
 		}
 		//Retorne o acumulador para a próxima iteração
 		return accumulator;
