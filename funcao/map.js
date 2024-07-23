@@ -11,6 +11,8 @@ function transformarMaiusculas() {
 
 console.log(transformarMaiusculas(palavras));
 
+
+
 // Como o map() Funciona
 // Iteração: O método map() itera sobre cada elemento do array arr.
 // Função de Callback: Para cada elemento, a função de callback palavra => palavra.toUpperCase() é chamada.
@@ -28,3 +30,9 @@ console.log(transformarMaiusculas(palavras));
 // palavra é "javascript".
 // palavra.toUpperCase() retorna "JAVASCRIPT".
 // O resultado é um novo array ["OLA", "MUNDO", "JAVASCRIPT"].
+
+const texto = ["ola", "mundo", "javascript"];
+
+// Use uma Arrow Function para transformar as palavras em maiúsculas
+const palavrasMaiusculas = texto.map(texto => texto.toUpperCase());
+console.log(palavrasMaiusculas); // Deve retornar ["OLA", "MUNDO", "JAVASCRIPT"]

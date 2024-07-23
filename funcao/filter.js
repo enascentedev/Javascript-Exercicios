@@ -9,4 +9,10 @@ function filtrarPares() {
 	return resultado
 }
 
+function filtrarImpares() {
+  const resultado= numeros.filter ((numero) =>numero %2 != 0)
+	return resultado
+}
+
 console.log(filtrarPares(numeros));
+console.log(filtrarImpares(numeros));
